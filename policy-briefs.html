@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Policy Briefs — [Your Name]</title>
+<meta name="description" content="Short policy analyses of current issues by [Your Name].">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">[Your Name]<small>Research &amp; Policy Portfolio</small></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="site-nav" id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="policy-briefs.html" aria-current="page">Policy Briefs</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero" style="padding-bottom: 1.5rem;">
+    <div class="wrap">
+      <span class="eyebrow">Policy Briefs</span>
+      <h1>Short analyses of current issues</h1>
+      <p class="lede">
+        Briefs are shorter and faster than the reports in Research — usually
+        one to two pages, written in response to something happening now:
+        a bill, a local vote, a news story worth unpacking. Each ends with
+        a clear recommendation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section" style="border-top: 1px solid var(--rule); padding-top: 2.5rem;">
+    <div class="wrap">
+
+      <div class="doc-list">
+
+        <a class="doc-entry" href="#">
+          <div class="doc-num"><span class="no-label">Brief</span>No. 001</div>
+          <div>
+            <h3 class="doc-title">[Brief title — e.g. "What the New Transit Bill Misses About Rural Routes"]</h3>
+            <div class="doc-meta">[Month Year] · [Jurisdiction/Level: local, state, federal]</div>
+            <p class="doc-excerpt">
+              [1–2 sentences: the issue, why it's timely, and your headline recommendation.]
+            </p>
+            <span class="tag">[Topic]</span>
+            <div style="margin-top: 0.6rem;"><span class="btn" style="padding: 0.45rem 0.9rem; font-size: 0.85rem;">Read brief (PDF) →</span></div>
+          </div>
+        </a>
+
+        <a class="doc-entry" href="#">
+          <div class="doc-num"><span class="no-label">Brief</span>No. 002</div>
+          <div>
+            <h3 class="doc-title">[Second brief title]</h3>
+            <div class="doc-meta">[Month Year] · [Jurisdiction/Level]</div>
+            <p class="doc-excerpt">
+              [1–2 sentence summary.]
+            </p>
+            <span class="tag">[Topic]</span>
+            <div style="margin-top: 0.6rem;"><span class="btn" style="padding: 0.45rem 0.9rem; font-size: 0.85rem;">Read brief (PDF) →</span></div>
+          </div>
+        </a>
+
+        <a class="doc-entry" href="#">
+          <div class="doc-num"><span class="no-label">Brief</span>No. 003</div>
+          <div>
+            <h3 class="doc-title">[Third brief title — most recent]</h3>
+            <div class="doc-meta">[Month Year] · [Jurisdiction/Level]</div>
+            <p class="doc-excerpt">
+              [1–2 sentence summary.]
+            </p>
+            <span class="tag">[Topic]</span>
+            <div style="margin-top: 0.6rem;"><span class="btn" style="padding: 0.45rem 0.9rem; font-size: 0.85rem;">Read brief (PDF) →</span></div>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> [Your Name]. Built and maintained independently.</span>
+    <span><a href="about.html">Contact</a></span>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

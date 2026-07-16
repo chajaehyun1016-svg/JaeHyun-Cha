@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — [Your Name]</title>
+<meta name="description" content="Biography and contact information for [Your Name].">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="index.html">[Your Name]<small>Research &amp; Policy Portfolio</small></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+    <nav class="site-nav" id="primary-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="policy-briefs.html">Policy Briefs</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="about.html" aria-current="page">About</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="section" style="padding-top: 3rem;">
+    <div class="wrap">
+      <span class="eyebrow">About</span>
+      <h1 style="font-size: clamp(1.9rem, 4vw, 2.6rem);">[Your Name]</h1>
+
+      <div class="about-grid" style="margin-top: 2rem;">
+        <div>
+          <div class="about-photo">
+            [Photo of you —<br>square or 4:5 crop<br>recommended]
+          </div>
+          <ul class="contact-list">
+            <li>[you@email.com]</li>
+            <li><a href="#">[LinkedIn, if you use it]</a></li>
+            <li><a href="#">[GitHub, if relevant]</a></li>
+            <li>[City, State — optional]</li>
+          </ul>
+        </div>
+
+        <div>
+          <p class="lede" style="font-size: 1.05rem;">
+            [2–3 short paragraphs. Paragraph one: who you are, your school,
+            grade, and how you got interested in policy and research.
+            Paragraph two: what you focus on now — link back to your Areas
+            of Interest from the home page — and any relevant coursework,
+            competitions, or mentors. Paragraph three, optional: what you're
+            working toward — a college focus, a long-term goal, or the kind
+            of work you want to do next.]
+          </p>
+
+          <hr class="hr-rule">
+
+          <h2 style="font-size: 1.3rem;">Get in touch</h2>
+          <p class="lede" style="font-size: 0.98rem;">
+            I'm happy to hear from researchers, teachers, MUN advisors, or
+            anyone working on [your issue areas]. The fastest way to reach me
+            is email — this form sends straight there.
+          </p>
+
+          <form style="margin-top: 1.5rem;" action="#" method="POST">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" required>
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required>
+            </div>
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Send message</button>
+          </form>
+          <p style="font-size: 0.8rem; color: var(--ink-soft); margin-top: 0.75rem;">
+            Note: this form needs a backend (e.g. Formspree) to actually deliver
+            messages — see the setup note in the project README.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <span>&copy; <span id="year"></span> [Your Name]. Built and maintained independently.</span>
+    <span><a href="about.html">Contact</a></span>
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
